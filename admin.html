@@ -261,7 +261,7 @@ const firebaseConfig = {
 
         window.logout = function logout() {
             signOut(auth).then(() => {
-                window.location.replace('login.html');
+                window.location.replace('index.html');
             }).catch((error) => {
                 console.error("Error during sign-out: ", error);
             });
@@ -412,9 +412,9 @@ const firebaseConfig = {
         <div class="school-name">Your School Name</div>
         <!-- Navigation Links -->
         <div class="nav">
-            <a href="#">Home</a>
-            <a href="#">Admin Panel</a>
-            <a href="#">Contact</a>
+            <a href="index.html">Home</a>
+            <a href="result.html">Student Results</a>
+            <a href="#">Parents</a>
         </div>
     </div>
 
